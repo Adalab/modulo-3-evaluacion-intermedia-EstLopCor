@@ -1,0 +1,38 @@
+* {
+  list-style-type: none;
+  font-family: "DotGothic16", sans-serif;
+}
+.title {
+  font-family: "RocknRoll One", sans-serif;
+  text-transform: uppercase;
+  text-align: center;
+}
+.pokeList {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+}
+.article {
+  border: solid 2px red;
+  border-radius: 22px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 150px;
+  height: 200px;
+  margin: 15px;
+  &__title {
+    text-transform: capitalize;
+    font-family: "RocknRoll One", sans-serif;
+  }
+  &__list {
+    display: flex;
+    padding: 0;
+
+    &--item {
+      padding: 10px;
+      text-transform: uppercase;
+    }
+  }
+}

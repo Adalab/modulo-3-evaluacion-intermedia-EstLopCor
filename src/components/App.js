@@ -6,7 +6,7 @@ console.log(data);
 function App() {
   return (
     <div>
-      <h1>Mi lista de pokemon</h1>
+      <h1 className="title">Mi lista de pokemon</h1>
       <PokeList pokemons={data} />
     </div>
   );

@@ -11,7 +11,7 @@ const PokeList = (props) => {
   });
   return (
     <div>
-      <ul>{item}</ul>
+      <ul className="pokeList">{item}</ul>
     </div>
   );
 };
