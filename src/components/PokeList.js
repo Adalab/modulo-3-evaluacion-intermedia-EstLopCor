@@ -1,11 +1,19 @@
-import "../styleshets/App.scss";
+import React from "react";
+import Pokemon from "./Pokemon";
 
-function PokeList() {
+const PokeList = (props) => {
+  const item = props.pokemons.map((pokeItem, i) => {
+    return (
+      <li key={i}>
+        <Pokemon pokeProp={pokeItem} />
+      </li>
+    );
+  });
   return (
     <div>
-      <h1>Hola mundo</h1>
+      <ul>{item}</ul>
     </div>
   );
-}
+};
 
 export default PokeList;
