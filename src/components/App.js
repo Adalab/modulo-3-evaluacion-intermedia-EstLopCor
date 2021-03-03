@@ -1,13 +1,14 @@
+import React, { useState } from "react";
 import "../styleshets/App.scss";
 import data from "../data/data.json";
 import PokeList from "./PokeList";
 
-console.log(data);
 function App() {
+  const [pokemonData] = useState(data);
   return (
     <div>
       <h1 className="title">Mi lista de pokemon</h1>
-      <PokeList pokemons={data} />
+      <PokeList pokemons={pokemonData} />
     </div>
   );
 }
